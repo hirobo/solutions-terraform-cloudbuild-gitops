@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "PROJECT_ID-tfstate"
+    bucket = "hirobo-terraform-sandbox-tfstate"
     prefix = "env/dev"
   }
 }
