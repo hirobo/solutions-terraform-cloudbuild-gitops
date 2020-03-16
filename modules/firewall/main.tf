@@ -21,6 +21,7 @@ resource "google_compute_firewall" "allow-http" {
   name    = "${local.network}-allow-http"
   network = "${local.network}"
   project = "${var.project}"
+  description = "test"
 
   allow {
     protocol = "tcp"
